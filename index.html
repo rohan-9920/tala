@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Happy Birthday Soniya</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Happy Birthday Sonangi">
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Birthday, Happy">
+	<meta property="og:type" content="E-Greeting" />
+	<meta property="og:image" content="favicon.ico" />
+	<meta property="og:description" content="Wish you a very Happy Birthday">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="loading.css">
+	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet/less" href="cake.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+	<style>
+		.confetti {
+			margin-top: -23%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="loading"></div>
+	<audio class="song" controls loop>
+		<source src="hbd.mp3">
+		</source>
+		Your browser isn't supported for this Audio!!.
+	</audio>
+	<div class="balloons text-center" id="b1">
+		<h2 style="color:#F2B300;">H</h2>
+	</div>
+	<div class="balloons text-center" id="b2">
+		<h2 style="color:#0719D4;">B</h2>
+	</div>
+	<div class="balloons text-center" id="b3">
+		<h2 style="color:#D14D39;">D</h2>
+	</div>
+	<div class="balloons text-center" id="b4">
+		<h2 style="color:#8FAD00;">S</h2>
+	</div>
+	<div class="balloons text-center" id="b5">
+		<h2 style="color:#8377E4;">O</h2>
+	</div>
+	<div class="balloons text-center" id="b6">
+		<h2 style="color:#99C96A;">N</h2>
+	</div>
+	<div class="balloons text-center" id="b7">
+		<h2 style="color:#20CFB4;">I</h2>
+	</div>
+	<div class="balloons text-center" id="b8">
+		<h2 style="color:#D14D39;">Y</h2>
+	</div>
+	<div class="balloons text-center" id="b9">
+		<h2 style="color:#F2B300;">A</h2>
+	</div>
+
+	<img src="Balloon-Border.png" width="100%" class="balloon-border">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_yellow"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_red"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_blue"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_green"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_pink"></div>
+			</div>
+			<div class="col-md-2 col-xs-2 bulb-holder">
+				<div class="bulb" id="bulb_orange"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="banner.png" class="bannar">
+			</div>
+		</div>
+		<div class="row cake-cover">
+			<div class="col-md-12 texr-center">
+				<div class="cake">
+					<div class="velas">
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+					</div>
+					<div class="cobertura"></div>
+					<div class="bizcocho"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row message">
+			<div class="col-md-12">
+				<p>Happy</p>
+				<p>Birthday</p>
+				<p>My</p>
+				<p>Cute</p>
+				<p>Friend!!!!!!</p>
+				<p>Always!!!!!!</p>
+				<p><strong>Happy!!!!!!!!!!</strong></p>
+			</div>
+		</div>
+		<div class="navbar navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 text-center col-md-offset-3">
+					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+					<button class="btn btn-primary" id="play">Special Music for You!! Let's play</button>
+					<button class="btn btn-primary" id="bannar_coming">Let's do some decoration!!</button>
+					<button class="btn btn-primary" id="balloons_flying">Some Balloons!!</button>
+					<button class="btn btn-primary" id="cake_fadein">Special Cake for You</button>
+					<button class="btn btn-primary" id="light_candle">Light a Candle</button>
+					<button class="btn btn-primary" id="wish_message">Happy Birthday Soniya!!</button>
+					<button class="btn btn-primary" id="story">Message for You Buddy!!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<canvas class="confetti" id="canvas"></canvas>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="effect.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script> -->
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-58229732-1', 'auto');
+	ga('send', 'pageview');
+</script>
+<script>
+	//-----------Var Inits--------------
+	canvas = document.getElementById("canvas");
+	ctx = canvas.getContext("2d");
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	cx = ctx.canvas.width / 2;
+	cy = ctx.canvas.height / 2;
+
+	let confetti = [];
+	const confettiCount = 300;
+	const gravity = 0.5;
+	const terminalVelocity = 5;
+	const drag = 0.075;
+	const colors = [
+		{ front: 'red', back: 'darkred' },
+		{ front: 'green', back: 'darkgreen' },
+		{ front: 'blue', back: 'darkblue' },
+		{ front: 'yellow', back: 'darkyellow' },
+		{ front: 'orange', back: 'darkorange' },
+		{ front: 'pink', back: 'darkpink' },
+		{ front: 'purple', back: 'darkpurple' },
+		{ front: 'turquoise', back: 'darkturquoise' }];
+
+
+	//-----------Functions--------------
+	resizeCanvas = () => {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		cx = ctx.canvas.width / 2;
+		cy = ctx.canvas.height / 2;
+	};
+
+	randomRange = (min, max) => Math.random() * (max - min) + min;
+
+	initConfetti = () => {
+		for (let i = 0; i < confettiCount; i++) {
+			confetti.push({
+				color: colors[Math.floor(randomRange(0, colors.length))],
+				dimensions: {
+					x: randomRange(10, 20),
+					y: randomRange(10, 30)
+				},
+
+				position: {
+					x: randomRange(0, canvas.width),
+					y: canvas.height - 1
+				},
+
+				rotation: randomRange(0, 2 * Math.PI),
+				scale: {
+					x: 1,
+					y: 1
+				},
+
+				velocity: {
+					x: randomRange(-25, 25),
+					y: randomRange(0, -50)
+				}
+			});
+
+
+		}
+	};
+
+	//---------Render-----------
+	render = () => {
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+		confetti.forEach((confetto, index) => {
+			let width = confetto.dimensions.x * confetto.scale.x;
+			let height = confetto.dimensions.y * confetto.scale.y;
+
+			// Move canvas to position and rotate
+			ctx.translate(confetto.position.x, confetto.position.y);
+			ctx.rotate(confetto.rotation);
+
+			// Apply forces to velocity
+			confetto.velocity.x -= confetto.velocity.x * drag;
+			confetto.velocity.y = Math.min(confetto.velocity.y + gravity, terminalVelocity);
+			confetto.velocity.x += Math.random() > 0.5 ? Math.random() : -Math.random();
+
+			// Set position
+			confetto.position.x += confetto.velocity.x;
+			confetto.position.y += confetto.velocity.y;
+
+			// Delete confetti when out of frame
+			if (confetto.position.y >= canvas.height) confetti.splice(index, 1);
+
+			// Loop confetto x position
+			if (confetto.position.x > canvas.width) confetto.position.x = 0;
+			if (confetto.position.x < 0) confetto.position.x = canvas.width;
+
+			// Spin confetto by scaling y
+			confetto.scale.y = Math.cos(confetto.position.y * 0.1);
+			ctx.fillStyle = confetto.scale.y > 0 ? confetto.color.front : confetto.color.back;
+
+			// Draw confetti
+			ctx.fillRect(-width / 2, -height / 2, width, height);
+
+			// Reset transform matrix
+			ctx.setTransform(1, 0, 0, 1, 0, 0);
+		});
+
+		// Fire off another round of confetti
+		if (confetti.length <= 10) initConfetti();
+
+		window.requestAnimationFrame(render);
+	};
+
+	//---------Execution--------
+	initConfetti();
+	render();
+
+	//----------Resize----------
+	window.addEventListener('resize', function () {
+		resizeCanvas();
+	});
+
+	//------------Click------------
+	window.addEventListener('click', function () {
+		initConfetti();
+	});
+</script>
+
+</html>
